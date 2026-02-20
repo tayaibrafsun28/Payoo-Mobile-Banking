@@ -16,6 +16,10 @@ document.getElementById('login-btn').addEventListener('click', function(){
 
     if (userNumber === '01974243177' && userPin === '1234') {
         alert('Login Completed');
+        
+        // Redirecting to home.html page
+
+        window.location.assign('/home.html')
     }
 
     else{
