@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payoo | Login</title>
+
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+    <!-- Tailwind + Daisy UI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Style -->
+
+    <style>
+        * {
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    Home page
+
+<body class="min-h-screen max-w-md bg-base-200 mx-auto">
+
+    <!-- header -->
+
+    <header class="border-b-2 border-gray-300 flex justify-between items-center px-6 py-4">
+
+        <div class="left flex gap-2">
+            <div class="logo w-[50px]">
+                <img src="./assets/logo.png" alt="">
+            </div>
+
+            <div class="balance-info">
+                <h2 class="text-lg font-bold">$ <span id="balance">45000</span></h2>
+                <p class="text-neutral/50">Available Balance</p>
+            </div>
+        </div>
+
+        <div class="right">
+            <a href="index.html" class="btn btn-soft text-neutral/60 rounded-lg border-2 bg-base-200"><i
+                    class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+        </div>
+
+    </header>
+
+    
+
+    <!-- Script -->
+
+    <script src="../login.js"></script>
 </body>
+
 </html>
