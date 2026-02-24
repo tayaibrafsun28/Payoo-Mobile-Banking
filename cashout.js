@@ -6,7 +6,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
 
    const agentNumber = agentNumberInput.value;
 
-   if (agentNumber.lenght != 11) {
+   if (agentNumber.length != 11) {
     alert('Invalid Agent Number');
     return;
    }
