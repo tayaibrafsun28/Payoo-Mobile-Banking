@@ -105,9 +105,40 @@
             </button>
         </section>
 
+        <!-- Add money -->
+
+        <div id="add-money" class="form space-y-5">
+            <h1 class="text-lg font-semibold">Add Money</h1>
+            <fieldset class="fieldset bg-white rounded-3xl p-10 shadow-sm flex flex-col gap-4">
+
+                <label class="label text-neutral/80 text-base font-medium">Select Bank</label>
+
+                <select id="bank" class="input w-full bg-base-200 rounded-full">
+                    <option disabled selected>Select Bank</option>
+                    <option value="DBL">DBL</option>
+                    <option value="IBL">IBL</option>
+                    <option value="CBL">CBL</option>
+                </select>
+
+                <label class="label text-neutral/80 text-base font-medium">Bank Account Number</label>
+                <input id="account-number" maxlength="11" minlength="11" type="text"
+                    class="input w-full bg-base-200 rounded-full" placeholder="Enter 11 digit account number" />
+
+                <label class="label text-neutral/80 text-base font-medium">Amount to add</label>
+                <input id="add-money-amount" type="number" class="input w-full bg-base-200 rounded-full"
+                    placeholder="Enter amount to add" />
+
+                <label class="label text-neutral/80 text-base font-medium">Pin Number</label>
+                <input id="add-money-pin" type="password" class="input w-full bg-base-200 rounded-full"
+                    placeholder="Enter 4 digit pin" />
+
+                <button id="add-money-btn" class="btn btn-primary rounded-full mt-4">Add Money</button>
+            </fieldset>
+        </div>
+
         <!-- Cashout Form -->
 
-        <div id="cashout" class="form space-y-5">
+        <div id="cashout" class="form space-y-5 hidden">
             <h1 class="text-lg font-semibold">Cash Out</h1>
             <fieldset class="fieldset bg-white rounded-3xl p-10 shadow-sm flex flex-col gap-4">
 
@@ -127,42 +158,14 @@
             </fieldset>
         </div>
 
-        <!-- Add money -->
 
-        <div id="add-money" class="form space-y-5">
-            <h1 class="text-lg font-semibold">Add Money</h1>
-            <fieldset class="fieldset bg-white rounded-3xl p-10 shadow-sm flex flex-col gap-4">
-
-                <label class="label text-neutral/80 text-base font-medium">Select Bank</label>
-
-                <select id="bank" class="input w-full bg-base-200 rounded-full">
-                    <option disabled selected>Select Bank</option>
-                    <option value="DBL">DBL</option>
-                    <option value="IBL">IBL</option>
-                    <option value="CBL">CBL</option>
-                </select>
-
-                <label class="label text-neutral/80 text-base font-medium">Bank Account Number</label>
-                <input id="add-money-number" maxlength="11" minlength="11" type="text"
-                    class="input w-full bg-base-200 rounded-full" placeholder="Enter 11 digit account number" />
-
-                <label class="label text-neutral/80 text-base font-medium">Amount to add</label>
-                <input id="add-money-amount" type="number" class="input w-full bg-base-200 rounded-full"
-                    placeholder="Enter amount to add" />
-
-                <label class="label text-neutral/80 text-base font-medium">Pin Number</label>
-                <input id="add-money-pin" type="password" class="input w-full bg-base-200 rounded-full"
-                    placeholder="Enter 4 digit pin" />
-
-                <button id="add-money-btn" class="btn btn-primary rounded-full mt-4">Add Money</button>
-            </fieldset>
-        </div>
     </main>
 
 
 
     <!-- Script -->
     <script src="machine.js"></script>
+    <script src="addMoney.js"></script>
     <script src="cashout2.js"></script>
 </body>
 
