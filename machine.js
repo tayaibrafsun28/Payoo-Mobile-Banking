@@ -23,3 +23,17 @@ function setBalance(value){
     balanceInput.innerText = value;
 
 }
+
+// show specific section
+
+function showOnly(id){
+    const addMoney = document.getElementById('add-money');
+
+    const cashout = document.getElementById('cashout');
+
+    addMoney.classList.add('hidden');
+    cashout.classList.add('hidden');
+
+    const selected = document.getElementById(id);
+    selected.classList.remove('hidden');
+}

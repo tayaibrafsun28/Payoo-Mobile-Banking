@@ -74,12 +74,12 @@
 
         <section class="grid grid-cols-3 gap-4">
 
-            <button class="btn flex-col h-full py-4 btn-primary btn-soft rounded-xl">
+            <button onclick="showOnly('add-money')" class="btn flex-col h-full py-4 btn-primary btn-soft rounded-xl">
                 <img src="./assets/opt-1.png" alt="">
                 <p>Add Money</p>
             </button>
 
-            <button class="btn flex-col h-full py-4 btn-primary btn-soft rounded-xl">
+            <button onclick="showOnly('cashout')" class="btn flex-col h-full py-4 btn-primary btn-soft rounded-xl">
                 <img src="./assets/opt-2.png" alt="">
                 <p>Cashout</p>
             </button>
@@ -107,7 +107,7 @@
 
         <!-- Add money -->
 
-        <div id="add-money" class="form space-y-5">
+        <div id="add-money" class="form space-y-5 hidden">
             <h1 class="text-lg font-semibold">Add Money</h1>
             <fieldset class="fieldset bg-white rounded-3xl p-10 shadow-sm flex flex-col gap-4">
 
