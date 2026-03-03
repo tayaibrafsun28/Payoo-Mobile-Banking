@@ -15,11 +15,9 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
 
     // Fetching account balance
 
-    const balanceInput = document.getElementById('balance');
+    const currentBalannce = getBalance();
 
-    const balance = balanceInput.innerText;
-
-    const newBalance = Number (balance) - Number (cashoutAmount);
+    const newBalance = currentBalannce - Number (cashoutAmount);
 
     if(newBalance < 0){
         alert('Invalid Amount')
@@ -37,7 +35,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
 
         // Update account Balance
 
-        balanceInput.innerText = newBalance;
+        setBalance(newBalance);
 
     }
 
