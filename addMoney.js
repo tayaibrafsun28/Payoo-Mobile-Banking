@@ -35,6 +35,30 @@ document.getElementById('add-money-btn').addEventListener('click', function(){
         alert(`Added Amount Successfully from ${bank} at ${accountNumber}`);
         setBalance(currentBalance);
 
+        // adding transaction history
+
+        //Step 1: fetch transaction-container
+
+        const transHistory = document.getElementById('transaction-container')
+
+        //Step 2: create new div
+
+        const newHistory = document.createElement('div');
+
+        //Step 3: add new div innerHTML 
+
+        newHistory.innerHTML = `
+        
+        <div id="transaction-card" class="p-5 bg-base-100 rounded-lg space-y-5">
+
+        Added Amount Successfully from ${bank} at Account No. ${accountNumber} on ${new Date()}
+
+        </div>
+
+        `
+        //Step 4: append new div to  transaction-container
+
+        transHistory.append(newHistory);
     }
 
     else{
