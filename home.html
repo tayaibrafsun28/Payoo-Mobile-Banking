@@ -99,7 +99,7 @@
                 <p>Pay Bill</p>
             </button>
 
-            <button class="btn flex-col h-full py-4 btn-primary btn-soft rounded-xl">
+            <button onclick="showOnly('transaction')" class="btn flex-col h-full py-4 btn-primary btn-soft rounded-xl">
                 <img src="./assets/opt-6.png" alt="">
                 <p>Transactions</p>
             </button>
@@ -160,7 +160,7 @@
 
         <!-- Transaction section -->
 
-        <div id="history" class="form space-y-5">
+        <div id="transaction" class="space-y-5 hidden">
             <h1 class="text-lg font-semibold">Transactions</h1>
 
             <div id="transaction-container" class="space-y-5">
