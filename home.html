@@ -94,7 +94,7 @@
                 <p>Get Bonus</p>
             </button>
 
-            <button class="btn flex-col h-full py-4 btn-primary btn-soft rounded-xl">
+            <button onclick="showOnly('payBill')"  class="btn flex-col h-full py-4 btn-primary btn-soft rounded-xl">
                 <img src="./assets/opt-5.png" alt="">
                 <p>Pay Bill</p>
             </button>
@@ -170,13 +170,44 @@
 
                 <label class="label text-neutral/80 text-base font-medium">Amount</label>
                 <input id="sendMoney-amount" type="number" class="input w-full bg-base-200 rounded-full"
-                    placeholder="Enter amount to withdraw" />
+                    placeholder="Enter amount to send" />
 
                 <label class="label text-neutral/80 text-base font-medium">Pin Number</label>
                 <input id="sendMoney-pin" type="password" class="input w-full bg-base-200 rounded-full"
                     placeholder="Enter 4 digit pin" />
 
                 <button id="send-btn" class="btn btn-primary rounded-full mt-4">Send Money</button>
+            </fieldset>
+        </div>
+
+        <!-- Pay Bill Form -->
+
+        <div id="payBill" class="form space-y-5 hidden">
+            <h1 class="text-lg font-semibold">Pay Bill</h1>
+            <fieldset class="fieldset bg-white rounded-3xl p-10 shadow-sm flex flex-col gap-4">
+
+                <label class="label text-neutral/80 text-base font-medium">Select Bank</label>
+
+                <select id="bank" class="input w-full bg-base-200 rounded-full">
+                    <option disabled selected>Select Bank</option>
+                    <option value="DBL">DBL</option>
+                    <option value="IBL">IBL</option>
+                    <option value="CBL">CBL</option>
+                </select>
+
+                <label class="label text-neutral/80 text-base font-medium">Biller Account Number</label>
+                <input id="acc-number" maxlength="11" minlength="11" type="text"
+                    class="input w-full bg-base-200 rounded-full" placeholder="Enter 11 digit number" />
+
+                <label class="label text-neutral/80 text-base font-medium">Amount to Pay Bill</label>
+                <input id="bill-amount" type="number" class="input w-full bg-base-200 rounded-full"
+                    placeholder="Enter amount to pay bill" />
+
+                <label class="label text-neutral/80 text-base font-medium">Pin Number</label>
+                <input id="payBill-pin" type="password" class="input w-full bg-base-200 rounded-full"
+                    placeholder="Enter 4 digit pin" />
+
+                <button id="pay-btn" class="btn btn-primary rounded-full mt-4">Pay Now</button>
             </fieldset>
         </div>
 
@@ -200,6 +231,7 @@
     <script src="addMoney.js"></script>
     <script src="cashout2.js"></script>
     <script src="sendMoney.js"></script>
+    <script src="payBill.js"></script>
 </body>
 
 </html>
