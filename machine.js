@@ -39,6 +39,7 @@ function showOnly(id){
     transaction.classList.add('hidden');
     sendMoney.classList.add('hidden');
     payBill.classList.add('hidden');
+    bonus.classList.add('hidden');
 
     const selected = document.getElementById(id);
     selected.classList.remove('hidden');
