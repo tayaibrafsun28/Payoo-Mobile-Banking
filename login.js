@@ -19,7 +19,7 @@ document.getElementById('login-btn').addEventListener('click', function(){
         
         // Redirecting to home.html page
 
-        window.location.assign('home.html')
+        window.location.assign('./home.html')
     }
 
     else{
