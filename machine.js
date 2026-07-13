@@ -33,6 +33,12 @@ function showOnly(id){
 
     const transaction = document.getElementById('transaction');
 
+    const sendMoney = document.getElementById('sendMoney');
+
+    const payBill = document.getElementById('payBill');
+
+    const bonus = document.getElementById('bonus');
+
 
     addMoney.classList.add('hidden');
     cashout.classList.add('hidden');
